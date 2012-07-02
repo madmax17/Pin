@@ -1,0 +1,43 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>Webshop</title>
+    <link href="style.css" rel="stylesheet" type="text/css">
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+
+<body>
+  <form id="form1" runat="server">
+   <div id="bodi">
+    <h1 id="retro">Webshop</h1>
+    <div id="right">
+        <asp:Label ID="lblIme" runat="server" Text="Label">Korisničko ime: </asp:Label>
+            <asp:TextBox ID="txtUsr" runat="server"></asp:TextBox> <br \ />
+            <asp:Label ID="lblPass" runat="server" Text="Label">Lozinka:</asp:Label>
+            <asp:TextBox ID="txtPass" type="password" runat="server" 
+            TextMode="Password"></asp:TextBox> <br \ />
+
+            <asp:LinkButton ID="login" runat="server" onclick="login_Click">Prijavi se</asp:LinkButton> <br \ />
+            <asp:Label ID="lblLog" runat="server" Text="Label">Logirani ste kao:</asp:Label>
+            <asp:Label ID="loggedUser" runat="server"></asp:Label> <br \ />
+            <asp:LinkButton ID="logout" runat="server" onclick="logout_Click">Odjavi se</asp:LinkButton><br />
+            <asp:LinkButton ID="LinkButton1" runat="server" onclick="LinkButton1_Click">Nemate račun? Registrirajte se ovdje!</asp:LinkButton>
+        <br />
+        <br />
+        <asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="~/Admin.aspx">admin</asp:HyperLink>
+      </div>
+      <asp:Button ID="btnShop" runat="server" Text="KUPUJ SADA!" 
+           onclick="btnShop_Click" />
+    </div>
+         <asp:Label ID="lblGreska" runat="server"></asp:Label>
+        
+        <br />
+        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        </asp:ContentPlaceHolder>
+    </form>
+</body>
+</html>

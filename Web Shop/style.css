@@ -1,0 +1,46 @@
+﻿body {
+}
+
+@font-face {
+  font-family: 'BazarMedium';
+  src: url('js/BazarMedium.ttf');
+}
+
+#right
+{
+    position: relative;
+    margin-top: 0px;
+    margin-left: 1202px;
+}
+
+#bodi{
+	width: 1400px;
+	margin-left: auto;
+	margin-right: auto;
+	border: 1px solid;
+	border-radius: 20px;
+	-moz-border-radius: 20px;
+	-webkit-border-radius: 20px;
+	padding: 5px 5px 5px 5px;
+}
+
+#retro
+{
+    position: absolute;
+    font-family: 'BazarMedium';
+    margin-left: 500px;
+    margin-top: 0px;
+    color: #d7ceb2;
+    text-shadow: 3px 3px 0px #2c2e38, 5px 5px 0px #5c5f72;
+    font: 80px 'BazarMedium';
+    letter-spacing: 10px; 
+}
+
+#btnShop
+{
+    position: relative;
+    margin-left: 550px;
+    margin-top: 50px;
+    font-family: 'BazarMedium';
+    font-size: 50px;
+}
